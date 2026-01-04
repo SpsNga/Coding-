@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desmos Clone - MVP</title>
+    <link rel="stylesheet" href="/static/style.css?v=2">
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <!-- Use Google Fonts for a premium look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="app-container">
+    <div class="sidebar">
+        <div class="header">
+            <h1>Graphing Calc</h1>
+            <span class="subtitle">Desmos Clone</span>
+        </div>
+        
+        <div id="equation-list" class="equation-list">
+            <!-- Equation inputs will be injected here -->
+        </div>
+
+        <button class="add-btn" onclick="addEquationInput()">+ Add Expression</button>
+
+        <div class="divider"></div>
+
+        <div id="slider-list" class="slider-list">
+            <!-- Sliders will be injected here -->
+        </div>
+        
+        <div class="footer">
+            Made by SPS
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div id="chart-container"></div>
+    </div>
+</div>
+
+<script src="/static/script.js?v=2"></script>
+</body>
+</html>
